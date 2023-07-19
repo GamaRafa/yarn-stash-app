@@ -66,8 +66,11 @@ app.post('/alter_table', (req, res) => {
 app.post('/insert_into', (req, res) => {
     // Get values from request body and format them as SQL strings with placeholders (%s)
     // For now, the values will be hardcode, as a test
-    const sqlQuery = `INSERT INTO fios VALUES (
-        '1', 'Classic Pull', 'Círculo', '100% acrílico', '606', '330', 'cinza', 'Menos de um novelo')`
+/*     const sqlQuery = `INSERT INTO fios VALUES (
+        '1', 'Classic Pull', 'Círculo', '100% acrílico', '606', '330', 'cinza', 'Menos de um novelo')` */
+        const sqlQuery = `INSERT INTO fios VALUES (
+        null, 'Urbano', 'Círculo', '100% acrílico', '909', '110', 'azul escuro', 'Menos de um novelo'            
+        )`
     db.run(sqlQuery, (err, rows) => {
         if (err){
             console.error('Error inserting data: ', err.message)
