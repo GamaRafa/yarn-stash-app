@@ -1,0 +1,26 @@
+Yarn stash app
+
+Front parecido com Knitting Tool
+
+Back conectado com banco de dados
+
+Infos dos fios:
+	- nome
+	- marca
+	- material
+	- tex
+	- metragem
+	- cor
+
+- Done:
+	- base de dados criada
+	- tabela fios criada
+	- criadas as rotas pra criar tabela e buscar toda a tabela
+	- criada rota pra alterar tabela (inserir campo quantidade)
+	- criada rota pra inserir dados na tabela
+
+
+- To do:
+	- criar front para visualizar os dados da tabela
+	- instalar nodemon
+	- refazer a tabela usando ID INT AUTOINCREMENT DEFAULT
