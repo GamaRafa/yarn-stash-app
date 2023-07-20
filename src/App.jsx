@@ -1,19 +1,18 @@
 import { useState } from 'react'
-//import './App.css'
+import './App.css'
 
 import { Home } from './Home/Home.jsx'
-// import { AdicionarFio } from './Adicionar-fio/Adicionar-fio.jsx'
-// import { ConsultarFio } from './Consultar-fio/Consultar-fio.jsx'
-// import { VerLista } from './Ver-lista/Ver-lista.jsx'
+import { AdicionarFio } from './Adicionar-fio/Adicionar-fio.jsx'
+import { ConsultarFio } from './Consultar-fio/Consultar-fio.jsx'
+import { VerLista } from './Ver-lista/Ver-lista.jsx'
 
 export function App() {
     const [ showHome, setShowHome ] = useState(true)
-/*
     const [ showAdicionarFio, setShowAdicionarFio ] = useState(false)
     const [ showConsultarFio, setShowConsultarFio ] = useState(false)
-    const [ showVerLista, setShowVerLista] = useState(false) */
+    const [ showVerLista, setShowVerLista] = useState(false)
 
-/*     const handleClickHome = () => {
+    const handleClickHome = () => {
         setShowHome(true)
         setShowAdicionarFio(false)
         setShowConsultarFio(false)
@@ -39,31 +38,31 @@ export function App() {
         setShowAdicionarFio(false)
         setShowConsultarFio(false)
         setShowVerLista(true)
-    } */
+    }
 
     return(
       <div className="app">
         <div className="navbar">
           <ul>
-            <li>
-              <a href="#">Home</a>
+            <li id='home'>
+              <a onClick={handleClickHome} href="#">Home</a>
             </li>
-            <li>
-              <a href="#">Adicionar fio</a>
+            <li id='adicionar'>
+              <a onClick={handleClickAdicionarFio} href="#">Adicionar fio</a>
             </li>
-            <li>
-              <a href="#">Consultar fio</a>
+            <li id='consultar'>
+              <a onClick={handleClickConsultarFio} href="#">Consultar fio</a>
             </li>
-            <li>
-              <a href="#">Ver lista completa</a>
+            <li id='completa'>
+              <a onClick={handleClickVerLista} href="#">Ver lista completa</a>
             </li>
           </ul>
         </div>
         <div className="content">
           { showHome && <Home />}
-{/*       { showAdicionarFio && <AdicionarFio /> }
+          { showAdicionarFio && <AdicionarFio /> }
           { showConsultarFio && <ConsultarFio/>  }
-          { showVerLista && <VerLista/>  } */}
+          { showVerLista && <VerLista/>  }
         </div>
       </div>
     )
