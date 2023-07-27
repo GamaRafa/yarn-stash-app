@@ -1,0 +1,32 @@
+#content{
+    text-align: center;
+}
+
+h2{
+    display: inline;
+    margin-right: 10px;
+}
+
+#btnLista{
+    width: 100px;
+    height: 50px;
+    color: white;
+    background-color: #ea4f93;
+    font-size: 24px;
+    border: none;
+}
+
+h2, #btnLista{
+    margin-top: 20px;
+}
+
+#listDiv{
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.fio{
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+}
