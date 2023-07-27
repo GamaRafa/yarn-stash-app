@@ -8,12 +8,12 @@ function getLista(){
     .then(response => response.json())
     //.then(data => console.log(data))
     .then(data => {
-        nome.innerHTML = `${data[0].nome}<br>`
-        marca.innerHTML = `<br>${data[0].marca}`
-        material.innerText = data[0].material
-        tex.innerText = data[0].tex
-        cor.innerText = data[0].cor
-        quantidade.innerText = data[0].quantidade
+        nome.innerHTML = `Nome: ${data[0].nome}`
+        marca.innerHTML = `Marca: ${data[0].marca}`
+        material.innerText = `Material: ${data[0].material}`
+        tex.innerText = `TEX: ${data[0].tex}`
+        cor.innerText = `Cor: ${data[0].cor}`
+        quantidade.innerText = `Quantidade: ${data[0].quantidade}`
     })
     .catch(error => console.error(error))
 }
