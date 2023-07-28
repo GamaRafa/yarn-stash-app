@@ -40,7 +40,7 @@ function getLista(){
             divFio.appendChild(hr);
         }
     })
-    .catch(error => console.error(error))
+    .catch(error => console.error(error)) 
 }
 
 
